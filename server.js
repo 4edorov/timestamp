@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 
-monthsStr = 'January,February,March,April,May,June,July,August,September,October,November,December'
+const monthsStr = 'January,February,March,April,May,June,July,August,September,October,November,December'
 const months = monthsStr.split(',')
 const PORT = process.env.PORT || 3000
 
