@@ -3,12 +3,12 @@ const path = require('path')
 
 monthsStr = 'January,February,March,April,May,June,July,August,September,October,November,December'
 const months = monthsStr.split(',')
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 const app = express()
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', './client/index.html'))
+  res.sendFile(path.join(__dirname, './client/index.html'))
 })
 
 app.get('/:raw', (req, res) => {
